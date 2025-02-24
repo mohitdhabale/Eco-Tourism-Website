@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#nav {
+    height: 55px;
+    background-color: white;
+    filter: drop-shadow(0px 0px 6px black);
+    border-radius: 2px;
+    position: fixed;
+    top: 3%;
+    left: 29%;
+    z-index: 5;
+}
+
+#nav_list {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 650;
+    padding: 10px;
+    margin: 4px 10px 4px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#nav_list:hover {
+    color: rgb(152, 195, 58);
+    text-decoration: none;
+}
+
+
+#about_banner_div{
+    width: 100%;
+    height: 400px;
+    background-image: url(bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    display: flex;
+}
+#about_banner_div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 74%;
+    background-color: rgba(0, 0, 0, 0.3);  /* Adjust opacity as needed */
+}
+#main_heading{
+    position: absolute;
+    left: 44%;
+    top: 26%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: .10em;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+
+#about_img_div{
+    position: absolute;
+    top: 90%;
+    left: 8%;
+    width: 30%;
+    height: 450px;
+}
+#about_img{
+    width: 100%;
+    height: 450px;
+}
+
+#about_detail_div{
+    width: 40%;
+    height: 250px;
+    position: absolute;
+    left: 40%;
+    top: 100%;
+}
+#about_heading{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#about_para{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#footer {
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    border: 1px solid rgb(18, 53, 36);
+    border-radius: 5px;
+    display: inline-flex;
+    position: absolute;
+    top: 200%;
+}
+
+#footer_div1 {
+    width: 20%;
+    height: 160px;
+    /* background-color: aqua; */
+    margin: 50px 10px 0px 250px;
+}
+
+#footer_div2 {
+    width: 20%;
+    height: 160px;
+    /* background-color: aqua; */
+    margin: 50px 10px 0px 10px;
+
+}
+
+#footer_div3 {
+    width: 20%;
+    height: 160px;
+    /* background-color: aqua; */
+    margin: 50px 40px 0px 10px;
+
+}
+
+.footer_heading {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    color: black;
+    margin-top: 8px;
+}
+
+.footer_list {
+    list-style-type: none;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer_address {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+}
+
+
+#middiv3{
+    width: 40%;
+    background-color: white;   
+    filter: drop-shadow(2px 4px 6px black);
+    position:absolute; 
+    left: 30%;
+    top: -10%;
+    display: inline;
+}
+.midtext{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: rgb(152, 195, 58);
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .10em;
+    animation: typing 3s steps(60, end);
+}
+@keyframes typing {
+    from {
+        width: 0;
+        margin-left: 20px;
+    }
+    to {
+        width: 100%; /* Full width of the text */
+    }
+}

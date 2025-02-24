@@ -1,0 +1,142 @@
+/* Navbar Styling */
+body{
+    background-image: url(vecteezy_photo-wallpaper-the-sky-water-house-sunset-lake-house_32263768.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#nav {
+    background: rgba(80, 45, 23, 0.6);
+    border-radius: 10px;
+    position: fixed;
+    left: 30%;
+    z-index: 5;
+}
+
+#nav_list {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    padding: 18px;
+    margin-left: 4px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+#nav_list:hover {
+    text-decoration: underline;
+    font-size: 20px;
+}
+#nav:hover{
+    filter:drop-shadow(4px 4px 3px rgb(80, 45, 23));
+}
+
+/* Gallery Section */
+#gallery_main_div {
+    width: 100%;
+    padding: 80px 0;
+    /* background-color: rgba(239, 227, 194, 0.2); */
+    text-align: center;
+}
+
+#gallery_heading {
+    font-family: sans-serif;
+    font-weight: 900;
+    color: rgb(59, 48, 32);
+    margin-bottom: 40px;
+}
+
+#gallery_grid {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery_item {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery_item:hover {
+    transform: scale(1.05);
+}
+
+.gallery_caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Footer Section */
+#footer{
+    width: 100%;
+    height: 180px;
+    background-color: rgba(148, 88, 40, 0.8);
+    /* border:1px solid rgb(18, 53, 36); */
+    border-radius: 5px;
+    display: flex;
+}
+#footer_div1{
+    width:20%;
+    height:160px;
+    /* background-color: aqua; */
+    margin: 0px 10px 0px 250px ;
+}
+#footer_div2{
+    width:20%;
+    height:160px;
+    /* background-color: aqua; */
+    margin: 0px 10px 0px 10px ;
+
+}
+#footer_div3{
+    width:20%;
+    height:160px;
+    /* background-color: aqua; */
+    margin: 0px 40px 0px 10px ;
+
+}
+.footer_heading{
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    color: white;
+    margin-top: 8px;
+}
+.footer_list{
+    list-style-type: none;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    /* color: white; */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+.footer_address{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+}
